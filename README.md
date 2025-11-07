@@ -100,6 +100,9 @@ src/
 - `npm start`: Run the compiled version
 - `npm run watch`: Watch for changes and recompile
 - `npm run clean`: Remove build artifacts
+- `npm test`: Run all tests
+- `npm run test:watch`: Run tests in watch mode
+- `npm run test:coverage`: Run tests with coverage report
 
 ### Technologies Used
 - **TypeScript**: Type-safe JavaScript
@@ -107,6 +110,27 @@ src/
 - **Inquirer**: Interactive command-line prompts
 - **Chalk**: Terminal string styling
 - **Figlet**: ASCII art text generation
+- **Jest**: Testing framework with 63 comprehensive tests
+
+## Testing
+
+This project includes a comprehensive test suite with:
+- ✅ **10 smoke tests** - Verify all units can be imported
+- ✅ **28 unit tests** - Test game engine functionality
+- ✅ **25 integration tests** - Test complete game flows
+
+```bash
+# Run all tests
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Generate coverage report
+npm run test:coverage
+```
+
+See [`TESTING.md`](./TESTING.md) for detailed documentation and [`TEST_SUMMARY.md`](./TEST_SUMMARY.md) for a quick overview.
 
 ## Contributing
 

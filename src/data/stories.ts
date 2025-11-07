@@ -419,6 +419,43 @@ Your adventure in the forest was just the beginning. Your real journey is helpin
       isEnding: true,
       endingType: 'good',
       choices: []
+    },
+
+    shadow_contact: {
+      id: 'shadow_contact',
+      text: `You call out to the watchers in the shadows, "Show yourselves! I mean no harm."
+
+After a tense moment, several pairs of glowing eyes emerge from the darkness. They belong to shadow sprites - mystical beings made of living darkness who protect the forest at night. The lead sprite speaks in a voice like rustling leaves.
+
+"Bold one, you acknowledge our presence without fear. This is rare. Most either flee or attack. We have watched many travelers, and your courage intrigues us. We can offer you passage through the hidden paths of the forest, but first, you must prove your intentions are pure."
+
+The sprite extends a shadowy tendril that forms into a mirror. "Look into this and show us your true heart."`,
+      
+      choices: [
+        {
+          text: 'Look into the shadow mirror bravely',
+          nextNodeId: 'shadow_mirror_brave',
+        },
+        {
+          text: 'Refuse and continue on your own path',
+          nextNodeId: 'deep_forest'
+        },
+      ]
+    },
+
+    shadow_mirror_brave: {
+      id: 'shadow_mirror_brave',
+      text: `You gaze into the shadow mirror and see not just your reflection, but your true essence - your hopes, fears, dreams, and the goodness within your heart. The sprites nod approvingly.
+
+"Your heart is pure," the lead sprite declares. "We grant you the Shadow's Blessing - the ability to see truth through darkness and walk safely where others fear to tread."
+
+The sprites dissolve into shadow and reform as a cloak that wraps around your shoulders. With this gift, you navigate the forest with ease, finding hidden treasures and ancient wisdom. Eventually, you discover the forest's heart - a place of pure magic where you are granted three wishes for your pure intentions.
+
+You use your wishes wisely, not for personal gain, but to bring light and hope to the world. The forest recognizes you as a true hero, and your legend lives on for generations.`,
+      
+      isEnding: true,
+      endingType: 'good',
+      choices: []
     }
   }
 };
