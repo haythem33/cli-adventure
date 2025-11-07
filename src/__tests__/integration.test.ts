@@ -9,10 +9,10 @@
  */
 
 import { describe, it, expect, beforeEach } from '@jest/globals';
-import { AdventureEngine } from '../game/engine';
-import { CLIManager } from '../utils/cli';
-import { mysteriousForestAdventure } from '../data/stories';
-import { Choice, GameState } from '../types';
+import { AdventureEngine } from '../modlets/game';
+import { CLIManager } from '../modlets/cli';
+import { mysteriousForestAdventure } from '../modlets/story';
+import { Choice, GameState } from '../modlets/game/types';
 
 // Mock CLI for automated testing
 class IntegrationMockCLI extends CLIManager {

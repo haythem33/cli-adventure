@@ -87,12 +87,19 @@ cli-adventure
 ### Project Structure
 ```
 src/
-├── types/           # TypeScript interfaces and types
-├── utils/           # CLI utilities and helpers
-├── game/            # Game engine and logic
-├── data/            # Story content and data
+├── modlets/         # Modular architecture with self-contained units
+│   ├── game/        # Game engine and types (types separated)
+│   ├── cli/         # CLI management utilities
+│   └── story/       # Story data with nested validators modlet
+├── __tests__/       # Comprehensive test suite
 └── index.ts         # Main entry point
 ```
+
+**Modlet Architecture**: The project uses a modular structure where each "modlet" is a self-contained module with:
+- ✅ Index files that only re-export (clean API)
+- ✅ Separated type definitions
+- ✅ Nested modlets for sub-functionality
+- See [`MODLETS.md`](./MODLETS.md) for detailed architecture documentation
 
 ### Available Scripts
 - `npm run dev`: Run in development mode with tsx
@@ -150,8 +157,10 @@ This project demonstrates:
 - **Async/Await**: Handling user input and game flow
 - **Type Safety**: TypeScript interfaces and type checking
 - **Module Organization**: Clean code structure and separation of concerns
+- **Modlet Architecture**: Self-contained modules with clear APIs
 - **CLI Development**: Building interactive terminal applications
 - **Data Structures**: Managing game state and story trees
+- **Test-Driven Development**: Comprehensive test suite with 72 tests
 
 ## License
 

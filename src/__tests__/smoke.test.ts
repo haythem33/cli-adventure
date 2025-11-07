@@ -4,9 +4,9 @@
  */
 
 import { describe, it, expect } from '@jest/globals';
-import { AdventureEngine } from '../game/engine';
-import { CLIManager } from '../utils/cli';
-import { mysteriousForestAdventure } from '../data/stories';
+import { AdventureEngine } from '../modlets/game';
+import { CLIManager } from '../modlets/cli';
+import { mysteriousForestAdventure } from '../modlets/story';
 
 describe('Smoke Tests - Module Loading', () => {
   describe('CLIManager Smoke Test', () => {

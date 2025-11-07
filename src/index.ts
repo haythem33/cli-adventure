@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import { AdventureEngine } from './game/engine';
-import { CLIManager } from './utils/cli';
-import { mysteriousForestAdventure } from './data/stories';
+import { AdventureEngine } from './modlets/game';
+import { CLIManager } from './modlets/cli';
+import { mysteriousForestAdventure } from './modlets/story';
 
 /**
  * Main entry point for the CLI Adventure Game

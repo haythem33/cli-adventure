@@ -9,9 +9,9 @@
  */
 
 import { describe, it, expect, beforeEach, jest } from '@jest/globals';
-import { AdventureEngine } from '../game/engine';
-import { CLIManager } from '../utils/cli';
-import { AdventureStory, GameState, Choice } from '../types';
+import { AdventureEngine } from '../modlets/game';
+import { CLIManager } from '../modlets/cli';
+import { AdventureStory, GameState, Choice } from '../modlets/game/types';
 
 // Mock CLI Manager to avoid user input during tests
 class MockCLIManager extends CLIManager {
